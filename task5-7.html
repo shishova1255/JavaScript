@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Задача 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно 		
+			       использовать оператор return. -->
+	<script>
+		var a = 2;
+		var b = 3;
+
+		function plus(a, b) {
+    		return a + b;
+		}
+
+		function minus(a, b) {
+    		return a - b;
+		}
+
+		function div (a, b) {
+    		return a / b;
+		}
+
+		function mult (a, b) {
+    		return a + b;
+		}
+	</script>
+
+    <!-- Задача 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, 	
+				arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного 		
+				значения операции выполнить одну из арифметических операций (использовать функции из пункта 3) и 		
+				вернуть полученное значение (использовать switch). -->
+	<script>
+
+		function mathOperation(arg1, arg2, operation){
+    			switch(operation){
+       				 case 'сложение':
+           				 return arg1 + arg2;
+           				 break;
+       				 case 'вычитание':
+           				 return arg1 - arg2;
+            			 break;
+        			 case 'деление':
+                      	return arg1 / arg2;
+            			 break;
+       				 case 'умножение':
+           				 return arg1 * arg2;
+            			 break;
+   				}
+		}
+
+	</script>
+
+
+<!-- Задача 7 Сравнить null и 0. Попробуйте объяснить результат. -->
+	<script>
+
+		alert( null > 0 );  // (1) false
+		alert( null == 0 ); // (2) false
+		alert( null >= 0 ); // (3) true
+
+		//Логично, что все три сравнения должны быть true, но мы видим false. Причина в том, что нестрогое равенство и сравнения > < >= <= работают по-разному. Сравнения преобразуют null в число, рассматривая его как 0. Поэтому выражение (3) null >= 0 истинно, а null > 0 ложно. С другой стороны, для нестрогого равенства == значений undefined и null действует особое правило: эти значения ни к чему не приводятся, они равны друг другу и не равны ничему другому. Поэтому (2) null == 0 ложно.
+
+
+	</script>
+</body>
+</html>
