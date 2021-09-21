@@ -7,28 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-//Задание 1. Честно, самостоятельно сделать не совсем получилось. Но по вашему объяснению всё разобрала и поняла. Математика сложно идет.
-    var a = 2;
-        function PrimeNumber(num){  //на месте num число, переданное в а. 
-            var i = 2;   // счет начинаем с 2
-            while(i < num / 2) {  //пока i меньше чем num / 2 выполняем
-                if(num % i == 0) {  //если в остатке 0, то возвращаем false
-                    return false;
-                }
-                i++;  //и выполняем инкремент переменной i
-            }
-            return true;
-        }
 
-        while(a <= 100){  //пока число меньше или равно 100, передаем число в функцию
-            if(PrimeNumber(a)){
-                console.log(a);
-            }
-            a++;
-        }
-
-       
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>
