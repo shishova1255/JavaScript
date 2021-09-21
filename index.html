@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <!-- Все задания сделала в одном файле. Первое выводится в alert, остальные в console.log-->
+    <!-- Задание 1 -->
+
+    <script>
+        var tempCelsium = prompt("Введите температуру в цельсиях: ");
+        var tempFareng = (9 / 5) * tempCelsium + 32;
+
+        alert('Температура в цельсиях: ' + tempCelsium + ' равна температуре в градусах по Фаренгейту: ' + tempFareng);
+    </script>
+    
+    <!-- Задание 2 -->
+
+    <script>
+        var admin;
+        var name = 'Василий';
+
+        admin = name;
+        console.log(admin);
+
+    </script>
+
+    <!-- Задание 3 -->
+
+    <script>
+        //Чему будет равно JS-выражение 1000 + "108"
+        //Выражение будет равно 1000108, так как "108" это строка, а 1000 число. Так как строка имеет больший приоритет, то число преобразуется в строку.
+    </script>
+
+    <!-- Дополнительное задание -->
+    <script>
+        var x = 10;
+        var y = 20;
+
+        y = x;
+        x = x + 10;
+        console.log(x,y);
+    </script>
+    
+
+
+
+</body>
+</html>
